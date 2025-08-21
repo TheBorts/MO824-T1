@@ -1,0 +1,1231 @@
+
+Gurobi 11.0.3 (linux64, grbtune) logging started Tue Aug 19 14:27:25 2025
+
+Set parameter Username
+Set parameter LogFile to value "grbtune.log"
+Using license file /home/ieremies/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-01-28
+Set parameter TuneTimeLimit to value 68400
+Set parameter TimeLimit to value 600
+Set parameter TuneCriterion to value 1
+Set parameter Threads to value 1
+
+grbtune version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 22.04.3 LTS")
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read MPS format model from file modelo_400_2.mps
+Reading time = 0.26 seconds
+MAX_SC_QBF_LINEAR: 241000 rows, 80600 columns, 581699 nonzeros
+
+CPU model: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 20 physical cores, 40 logical processors, using up to 1 threads
+
+Start tuning.
+
+Solving model using baseline parameter set with TimeLimit=600s
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 1...
+
+	Threads 1 (fixed)
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1075%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1198%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1107%
+
+Summary candidate parameter set 1 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1075%    1198%    1107%    1127%    51.94    1198%
+
+-------------------------------------------------------------------------------
+Begin tuning (baseline maximum MIP gap 1198%)...
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 2...
+
+	Threads 1 (fixed)
+	OBBT 3
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1075%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1198%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1107%
+
+Summary candidate parameter set 2 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1075%    1198%    1107%    1127%    51.94    1198%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+Total elapsed tuning time 3600s (64800s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 3...
+
+	Threads 1 (fixed)
+	Aggregate 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1075%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1198%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1107%
+
+Summary candidate parameter set 3 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1075%    1198%    1107%    1127%    51.94    1198%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+Total elapsed tuning time 5400s (63000s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 4...
+
+	Threads 1 (fixed)
+	NormAdjust 3
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1076%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1174%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1119%
+
+Summary candidate parameter set 4 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1076%    1174%    1119%    1123%    39.82    1174%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+Total elapsed tuning time 7200s (61200s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 5...
+
+	Threads 1 (fixed)
+	NormAdjust 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1087%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1059%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1088%
+
+Summary candidate parameter set 5 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1087%    1059%    1088%    1078%    13.61    1088%
+
+Improvement found:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  improved: maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 9001s (59399s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 6...
+
+	Threads 1 (fixed)
+	NormAdjust 0
+	StrongCGCuts 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1087%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1059%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1088%
+
+Summary candidate parameter set 6 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1087%    1059%    1088%    1078%    13.61    1088%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 10801s (57599s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 7...
+
+	Threads 1 (fixed)
+	NormAdjust 0
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1151%
+
+Summary candidate parameter set 7 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1151%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 11401s (56999s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 8...
+
+	Threads 1 (fixed)
+	NormAdjust 0
+	Heuristics 0.001
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1080%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1052%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1085%
+
+Summary candidate parameter set 8 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1080%    1052%    1085%    1072%    14.32    1085%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 13201s (55199s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 9...
+
+	Threads 1 (fixed)
+	Method 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1023%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1070%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1100%
+
+Summary candidate parameter set 9 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1023%    1070%    1100%    1064%    31.84    1100%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 15001s (53399s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 10...
+
+	Threads 1 (fixed)
+	NormAdjust 0
+	PrePasses 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1090%
+
+Summary candidate parameter set 10 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1090%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 15601s (52799s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 11...
+
+	Threads 1 (fixed)
+	NormAdjust 0
+	GomoryPasses 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1086%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1063%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1083%
+
+Summary candidate parameter set 11 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1086%    1063%    1083%    1078%    10.54    1086%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 17401s (50999s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 12...
+
+	Threads 1 (fixed)
+	Method 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1147%
+
+Summary candidate parameter set 12 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1147%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 18002s (50398s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 13...
+
+	Threads 1 (fixed)
+	Method 0
+	VarBranch 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1147%
+
+Summary candidate parameter set 13 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1147%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 18602s (49798s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 14...
+
+	Threads 1 (fixed)
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1061%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1165%
+
+Summary candidate parameter set 14 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1061%    1165%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 19803s (48597s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 15...
+
+	Threads 1 (fixed)
+	NormAdjust 0
+	Cuts 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1087%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1059%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1088%
+
+Summary candidate parameter set 15 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1087%    1059%    1088%    1078%    13.61    1088%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1088% (parameter set 5, 1 non-defaults)
+Total elapsed tuning time 21603s (46797s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 16...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 16 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Improvement found:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  improved: maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 23403s (44997s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 17...
+
+	Threads 1 (fixed)
+	Heuristics 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap -
+
+Summary candidate parameter set 17 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB         -        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 24003s (44397s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 18...
+
+	Threads 1 (fixed)
+	Heuristics 0.001
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1070%
+
+Summary candidate parameter set 18 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1070%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 24603s (43797s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 19...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	OBBT 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 19 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 26403s (41997s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 20...
+
+	Threads 1 (fixed)
+	Method 0
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1143%
+
+Summary candidate parameter set 20 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1143%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 27003s (41397s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 21...
+
+	Threads 1 (fixed)
+	Method 2
+	RINS 2500
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1023%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1070%
+
+Summary candidate parameter set 21 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1023%    1070%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 28203s (40197s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 22...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	OBBT 3
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 22 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 30003s (38397s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 23...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	PrePasses 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1020%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1072%
+
+Summary candidate parameter set 23 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1020%    1072%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 31203s (37197s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 24...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1034%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1057%
+
+Summary candidate parameter set 24 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1034%    1057%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 32403s (35997s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 25...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	AggFill 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 25 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 34204s (34196s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 26...
+
+	Threads 1 (fixed)
+	Method 0
+	Heuristics 0.001
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1143%
+
+Summary candidate parameter set 26 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1143%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 34804s (33596s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 27...
+
+	Threads 1 (fixed)
+	DegenMoves 4
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1075%
+
+Summary candidate parameter set 27 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1075%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 35404s (32996s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 28...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	Presolve 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1057%
+
+Summary candidate parameter set 28 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1057%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 36004s (32396s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 29...
+
+	Threads 1 (fixed)
+	Presolve 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1148%
+
+Summary candidate parameter set 29 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1148%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 36604s (31796s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 30...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	Aggregate 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1050%
+
+Summary candidate parameter set 30 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1050%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 37204s (31196s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 31...
+
+	Threads 1 (fixed)
+	Method 0
+	Presolve 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1197%
+
+Summary candidate parameter set 31 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1197%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 37804s (30596s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 32...
+
+	Threads 1 (fixed)
+	GomoryPasses 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1077%
+
+Summary candidate parameter set 32 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1077%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 38404s (29996s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 33...
+
+	Threads 1 (fixed)
+	Method 2
+	RINS 100
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1023%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1070%
+
+Summary candidate parameter set 33 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1023%    1070%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 39604s (28796s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 34...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	Cuts 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1024%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1078%
+
+Summary candidate parameter set 34 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1024%    1078%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 40804s (27596s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 35...
+
+	Threads 1 (fixed)
+	Method 0
+	MIPFocus 2
+	AggFill 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1134%
+
+Summary candidate parameter set 35 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1134%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 41404s (26996s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 36...
+
+	Threads 1 (fixed)
+	Heuristics 0
+	Presolve 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap -
+
+Summary candidate parameter set 36 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB         -        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 42004s (26396s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 37...
+
+	Threads 1 (fixed)
+	MIPFocus 2
+	Cuts 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1066%
+
+Summary candidate parameter set 37 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1066%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 42604s (25796s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 38...
+
+	Threads 1 (fixed)
+	Method 2
+	DegenMoves 0
+	MIPFocus 2
+	Cuts 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1108%
+
+Summary candidate parameter set 38 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1108%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 43204s (25196s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 39...
+
+	Threads 1 (fixed)
+	Method 0
+	MIPFocus 2
+	PrePasses 8
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1143%
+
+Summary candidate parameter set 39 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1143%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 43804s (24596s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 40...
+
+	Threads 1 (fixed)
+	Method 2
+	Heuristics 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap -
+
+Summary candidate parameter set 40 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB         -        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 44404s (23996s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 41...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	FlowCoverCuts 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 41 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 46204s (22196s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 42...
+
+	Threads 1 (fixed)
+	MIPFocus 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1085%
+
+Summary candidate parameter set 42 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1085%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 46804s (21596s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 43...
+
+	Threads 1 (fixed)
+	Method 2
+	Heuristics 0.5
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1057%
+
+Summary candidate parameter set 43 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1057%    1043%    15.48    1057%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 48605s (19795s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 44...
+
+	Threads 1 (fixed)
+	Method 2
+	CoverCuts 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1024%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1075%
+
+Summary candidate parameter set 44 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1024%    1075%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 49805s (18595s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 45...
+
+	Threads 1 (fixed)
+	Method 2
+	DegenMoves 4
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 45 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 51605s (16795s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 46...
+
+	Threads 1 (fixed)
+	Method 2
+	AggFill 100
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1023%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1070%
+
+Summary candidate parameter set 46 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1023%    1070%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 52805s (15595s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 47...
+
+	Threads 1 (fixed)
+	Heuristics 0.5
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1061%
+
+Summary candidate parameter set 47 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1061%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 53405s (14995s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 48...
+
+	Threads 1 (fixed)
+	MIPFocus 2
+	PreSparsify 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1061%
+
+Summary candidate parameter set 48 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1061%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 54005s (14395s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 49...
+
+	Threads 1 (fixed)
+	Method 2
+	DegenMoves 5
+	MIPFocus 2
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 49 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 55805s (12595s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 50...
+
+	Threads 1 (fixed)
+	Method 2
+	Heuristics 0.5
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1023%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1057%
+
+Summary candidate parameter set 50 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1023%    1057%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 57005s (11395s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 51...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	PreDepRow 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 51 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 58805s (9595s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 52...
+
+	Threads 1 (fixed)
+	Method 2
+	VarBranch 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1023%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1070%
+
+Summary candidate parameter set 52 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1023%    1070%        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 60005s (8395s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 53...
+
+	Threads 1 (fixed)
+	Method 2
+	MIPFocus 2
+	PrePasses 5
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1021%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 1050%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 1037%
+
+Summary candidate parameter set 53 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1021%    1050%    1037%    1036%    11.87    1050%
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 1050% (parameter set 16, 2 non-defaults)
+Total elapsed tuning time 61806s (6594s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 54...
+
+	Threads 1 (fixed)
+	Cuts 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 896%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 713%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 697%
+
+Summary candidate parameter set 54 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB      896%     713%     697%     768%    90.49     896%
+
+Improvement found:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  improved: maximum MIP gap 896% (parameter set 54, 1 non-defaults)
+Total elapsed tuning time 63606s (4794s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 55...
+
+	Threads 1 (fixed)
+	Method 2
+	Cuts 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 701%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 748%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 772%
+
+Summary candidate parameter set 55 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB      701%     748%     772%     741%    29.47     772%
+
+Improvement found:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  improved: maximum MIP gap 772% (parameter set 55, 2 non-defaults)
+Total elapsed tuning time 65406s (2994s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 56...
+
+	Threads 1 (fixed)
+	BranchDir 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 1075%
+
+Summary candidate parameter set 56 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1075%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 772% (parameter set 55, 2 non-defaults)
+Total elapsed tuning time 66006s (2394s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 57...
+
+	Threads 1 (fixed)
+	Method 0
+	Cuts 0
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 953%
+
+Summary candidate parameter set 57 (discarded)
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB      953%        -        -        -        -        -
+
+Progress so far:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  best:     maximum MIP gap 772% (parameter set 55, 2 non-defaults)
+Total elapsed tuning time 66606s (1794s remaining, 1 running jobs)
+
+-------------------------------------------------------------------------------
+
+Testing candidate parameter set 58...
+
+	Threads 1 (fixed)
+	Method 2
+	Cuts 0
+	PrePasses 1
+
+Solving MAX_SC_QBF_LINEAR with random seed #1 ... MIP gap 690%
+Solving MAX_SC_QBF_LINEAR with random seed #2 ... MIP gap 692%
+Solving MAX_SC_QBF_LINEAR with random seed #3 ... MIP gap 734%
+
+Summary candidate parameter set 58 
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB      690%     692%     734%     706%    20.41     734%
+
+Improvement found:
+  baseline: maximum MIP gap 1198% (parameter set 1, 0 non-defaults)
+  improved: maximum MIP gap 734% (parameter set 58, 3 non-defaults)
+Total elapsed tuning time 68406s (-6s remaining, 1 running jobs)
+
+
+
+Tune time limit reached
+
+-------------------------------------------------------------------------------
+
+Tested 58 parameter sets in 68406.14s
+Total optimization run time for up to 1 concurrent runs: 68404.04s
+
+Baseline parameter set: maximum MIP gap 1198%
+
+	Threads 1 (fixed)
+
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB     1075%    1198%    1107%    1127%    51.94    1198%
+
+
+Improved parameter set 1 (maximum MIP gap 734%):
+
+	Threads 1 (fixed)
+	Method 2
+	Cuts 0
+	PrePasses 1
+
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB      690%     692%     734%     706%    20.41     734%
+
+
+Improved parameter set 2 (maximum MIP gap 772%):
+
+	Threads 1 (fixed)
+	Method 2
+	Cuts 0
+
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB      701%     748%     772%     741%    29.47     772%
+
+
+Improved parameter set 3 (maximum MIP gap 896%):
+
+	Threads 1 (fixed)
+	Cuts 0
+
+ # Name              0        1        2      Avg  Std Dev      Max
+ 0 MAX_SC_QB      896%     713%     697%     768%    90.49     896%
+
+Wrote parameter files: tune0.prm through tune3.prm
+Wrote log files: tune0.log through tune3.log
